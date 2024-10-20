@@ -11,7 +11,7 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   transition: background 2s ease;
-  background-image: url('../public/Mosque.png'); /* Placeholder for mosque image */
+  background-image: url('../public/Mosque.png'); 
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -77,18 +77,18 @@
   height: 100%;
   background: url('../src/components/cloud.png') repeat;
   background-size: cover;
-  animation: moveClouds 120s linear infinite; /* Smooth movement */
-  opacity: 0.5; /* Lower opacity for a softer look */
-  top: 20%; /* Positioning of clouds */
-  z-index: 1; /* Ensure clouds are below other elements */
+  animation: moveClouds 120s linear infinite;
+  opacity: 0.5; 
+  top: 20%; 
+  z-index: 1; 
 }
 
 @keyframes moveClouds {
   0% {
-    transform: translateX(0); /* Start position */
+    transform: translateX(0); 
   }
   100% {
-    transform: translateX(-100%); /* Move to the left */
+    transform: translateX(-100%); 
   }
 }
 
@@ -100,118 +100,116 @@
 .content {
   position: relative;
   z-index: 1;
-  max-width: 600px; /* Limit max width for better responsiveness */
-  padding: 20px; /* Add some padding */
+  max-width: 600px; 
+  padding: 20px;
 }
 
 select, button {
   margin: 10px;
-  padding: 12px 20px; /* Increased padding for a more modern look */
+  padding: 12px 20px; 
   font-size: 16px;
   border: none;
   cursor: pointer;
-  border-radius: 25px; /* More rounded corners for buttons */
+  border-radius: 25px; 
   transition: all 0.3s ease;
   outline: none;
 }
 
-/* Modern Button Style */
+
 button {
-  background-color: #FFD700; /* Gold background */
-  color: #000; /* Dark text color */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  background-color: #FFD700; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 button:hover {
-  background-color: #FFA500; /* Darker gold on hover */
-  transform: translateY(-2px); /* Lift effect on hover */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  background-color: #FFA500; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
 }
 
-/* Modern Dropdown Style */
+
 select {
-  appearance: none; /* Remove default styling */
-  background-color: #FFF; /* White background for better contrast */
-  color: #333; /* Dark text for readability */
-  border-radius: 25px; /* Rounded corners */
+  appearance: none; 
+  background-color: #FFF; 
+  border-radius: 25px; 
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="16" height="16"><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Custom dropdown arrow */
   background-repeat: no-repeat;
-  background-position: right 15px center; /* Position the arrow */
-  background-size: 12px; /* Size of the arrow */
-  padding-right: 40px; /* Space for the arrow */
-  border: 1px solid #ccc; /* Light border for the dropdown */
+  background-position: right 15px center; 
+  background-size: 12px; 
+  padding-right: 40px; 
+  border: 1px solid #ccc; 
   transition: border-color 0.3s ease;
 }
 
 select:hover, select:focus {
-  border-color: #FFD700; /* Change border color on hover/focus */
+  border-color: #FFD700; 
 }
 
 .prayer-times {
   margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent */
-  padding: 15px; /* Reduced padding for a more compact look */
-  border-radius: 15px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 15px; 
+  border-radius: 15px; 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
-  max-width: 90%; /* Responsive max width */
-  margin-left: auto; /* Center alignment */
-  margin-right: auto; /* Center alignment */
+  max-width: 90%; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .prayer-times h2 {
-  margin: 0 0 10px; /* Reduced margin */
-  font-size: 24px; /* Smaller font size for heading */
-  color: #FFD700; /* Gold color for the city name */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for contrast */
+  margin: 0 0 10px; 
+  font-size: 24px; 
+  color: #FFD700; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .prayer-times ul {
-  list-style-type: none; /* Remove default list style */
-  padding: 0; /* Remove default padding */
+  list-style-type: none; 
+  padding: 0; 
 }
 
 .prayer-times li {
-  margin: 8px 0; /* Reduced margin */
-  font-size: 18px; /* Slightly smaller font size */
+  margin: 8px 0; 
+  font-size: 18px; 
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Divider line */
-  padding: 8px 0; /* Reduced padding */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+  padding: 8px 0; 
 }
 
 .prayer-times li:last-child {
-  border: none; /* Remove border from the last item */
+  border: none; 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .app-container {
-    padding: 10px; /* Add padding for smaller screens */
+    padding: 10px; 
   }
 
   .prayer-times h2 {
-    font-size: 20px; /* Smaller heading font size */
+    font-size: 20px; 
   }
 
   .prayer-times li {
-    font-size: 16px; /* Smaller list item font size */
+    font-size: 16px; 
   }
 }
 
 @media (max-width: 480px) {
   .app-container {
-    padding: 5px; /* Further padding for very small screens */
+    padding: 5px; 
   }
 
   .prayer-times {
-    padding: 10px; /* Reduced padding for mobile */
+    padding: 10px; 
   }
 
   .prayer-times h2 {
-    font-size: 18px; /* Further reduced heading font size */
+    font-size: 18px; 
   }
 
   .prayer-times li {
-    font-size: 14px; /* Further reduced list item font size */
+    font-size: 14px; 
   }
 }
